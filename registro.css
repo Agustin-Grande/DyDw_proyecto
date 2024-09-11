@@ -1,0 +1,90 @@
+body {
+    background-color: #a4fee6;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    text-align: right;
+    margin: 40px;
+}
+
+.titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: -125px;
+}
+  
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+.log {
+    width: 50px;
+    height: 50px;
+    margin-left: -80px;
+    display: block;
+    position: absolute;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: absolute;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 0;
+    border-radius: 3px;
+    background-color: #1c87c9;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #095484;
+}
+
+
+
+.registro {
+    text-align: center;
+    font-family: 'Akira', akira ;
+    margin: 10px 0;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
