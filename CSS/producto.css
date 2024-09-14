@@ -1,0 +1,180 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    padding-bottom: 50px;
+}
+
+.header {
+    background-color: #A2C7E2;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: solid #F5F5F5;
+    position: relative; 
+}
+
+.header img{
+    width: 70px;
+    margin-left: -200px;    
+}
+
+.header a{
+    color:white;
+    text-decoration: none;
+}
+
+.header .logo, .header .search-bar, .header .user-options {
+    flex: 1; 
+    text-align: center; 
+}
+
+
+.header .user-options {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.header .search-bar {
+    display: flex;
+    justify-content: center; 
+}
+
+.header .search-bar input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.header .search-bar button {
+    background-color: #4FBEB8;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    margin-left: 5px;
+}
+
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    font-family: 'Nexa', sans-serif;
+    background-color: #4FBEB8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #A2C7E2;
+    z-index: 10; 
+}
+
+.menu-toggle:checked + .menu-button + .menu {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu ul li {
+    margin: 0.5rem 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Nexa', sans-serif;
+}
+
+.product-detail {
+    display: flex;
+    margin: 2rem auto;
+    max-width: 1200px;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.product-image img {
+    width: 400px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-info {
+    max-width: 600px;
+}
+
+.product-info h2 {
+    font-family: 'Nexa', sans-serif;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #4FBEB8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-family: 'Nexa', sans-serif;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #4FBEB8;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+

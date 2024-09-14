@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Nexa', sans-serif;
+}
+
+.logo h1 {
+    font-family: 'Akira', sans-serif;
+    color: #A2C7E2;
+}
+
+.header {
+    background-color: #A2C7E2;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: solid #F5F5F5;
+    position: relative; 
+}
+
+.header img{
+    width: 70px;
+    margin-left: -200px;    
+}
+
+.header a{
+    color:white;
+    text-decoration: none;
+}
+
+.header .logo, .header .search-bar, .header .user-options {
+    flex: 1; 
+    text-align: center; 
+}
+
+
+.header .user-options {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.header .search-bar {
+    display: flex;
+    justify-content: center; 
+}
+
+.header .search-bar input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.header .search-bar button {
+    background-color: #4FBEB8;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    margin-left: 5px;
+}
+
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    font-family: 'Nexa', sans-serif;
+    background-color: #4FBEB8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #A2C7E2;
+    z-index: 10; 
+}
+
+.menu-toggle:checked + .menu-button + .menu {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu ul li {
+    margin: 0.5rem 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Nexa', sans-serif;
+}
+
+.about-us {
+    background-color: #F5F5F5;
+    padding: 2rem 0;
+}
+
+.about-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-us h2 {
+    font-family: 'Nexa', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-us h3 {
+    font-family: 'Nexa', sans-serif;
+    font-size: 1.5rem;
+    color: #4FBEB8;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.about-us ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+.about-us ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    background-color: #A2C7E2;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    margin: 0 10px;
+    text-decoration: none;
+}

@@ -1,0 +1,214 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Nexa', sans-serif;
+}
+
+.logo h1 {
+    font-family: 'Akira', sans-serif;
+    color: #A2C7E2;
+}
+
+.header {
+    background-color: #A2C7E2;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: solid #F5F5F5;
+    position: relative; 
+}
+
+.header img{
+    width: 70px;
+    margin-left: -200px;    
+}
+
+.header a{
+    color:white;
+    text-decoration: none;
+}
+
+.header .logo, .header .search-bar, .header .user-options {
+    flex: 1; 
+    text-align: center; 
+}
+
+
+.header .user-options {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.header .search-bar {
+    display: flex;
+    justify-content: center; 
+}
+
+.header .search-bar input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.header .search-bar button {
+    background-color: #4FBEB8;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    margin-left: 5px;
+}
+
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    font-family: 'Nexa', sans-serif;
+    background-color: #4FBEB8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #A2C7E2;
+    z-index: 10; 
+}
+
+.menu-toggle:checked + .menu-button + .menu {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu ul li {
+    margin: 0.5rem 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Nexa', sans-serif;
+}
+
+.fondo {
+    position: relative;
+    height: 300px;
+    background-color: #DDDDDD;
+}
+
+.fondo-img {
+    width: 100%;
+    height: 300px;
+    object-fit:cover;
+    object-position: center bottom;
+}
+
+.fondo-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.fondo-texto h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.fondo-texto p {
+    font-size: 18px;
+}
+
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 200px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    color: #FF4136;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product button {
+    background-color: #4FBEB8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Nexa', sans-serif;
+}
+
+.footer {
+    background-color: #A2C7E2;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    margin: 0 10px;
+    text-decoration: none;
+}
