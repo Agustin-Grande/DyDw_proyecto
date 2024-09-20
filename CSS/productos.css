@@ -158,6 +158,23 @@ h1, h2, h3 {
     font-size: 18px;
 }
 
+#productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#productos hr {
+
+    width: 80%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #A2C7E2;
+
+}
 .products {
     padding: 20px;
     text-align: center;
@@ -221,4 +238,24 @@ h1, h2, h3 {
 .footer a {
     margin: 0 10px;
     text-decoration: none;
+}
+
+.filters {
+    width: 20%;
+    background-color: #A2C7E2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+.filters h3 {
+    margin-bottom: 10px;
+}
+
+.filters label, .filters select {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 2px;
 }

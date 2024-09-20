@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle de Zapatilla</title>
-    <link rel="stylesheet" href="../CSS/producto.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Nexa:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet">
+    <title>Style Shoes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Akira&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet">    
+    <link rel="stylesheet" href="../CSS/descuentos.css">
 </head>
 <body>
     <header class="header">
@@ -35,35 +35,35 @@
             </nav>
         </div>
     </header>
-    
+
     <main>
-        <div class="container product-detail">
-            <div class="product-image">
-                <img src="../Imagenes/zapatilla1.jpg" alt="Zapatilla">
+        <section class="products">
+            <h2>Nuestros descuentos</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="../Imagenes/logo.png" alt="MasterCard">
+                    <h3>Mastercard</h3>
+                    <p>De 3 a 12 cuotas sin interes</p>
+                </div>
+                <div class="product">
+                    <img src="../Imagenes/bank.png" alt="Transferencia bancaria">
+                    <h3>Transferencia</h3>
+                    <p>15% de descuento en compras</p>
+                </div>
+                <div class="product">
+                    <img src="../Imagenes/paypal.png" alt="PayPal">
+                    <h3>PayPal</h3>
+                    <p>5% de cashback (Limite 250 usd$)</p>
+                </div>
+                <div class="product">
+                    <img src="../Imagenes/visa.png" alt="Visa">
+                    <h3>Visa</h3>
+                    <p>Hasta 24 cuotas sin interes</p>
+                </div>
             </div>
-            <div class="product-info">
-                <h2>Adidas Runfalcon 3.0 Negra</h2>
-                <p><strong>Precio:</strong> $100.00</p>
-                <p><strong>Stock disponible:</strong> 15 unidades</p>
-                
-                <form>
-                    <label for="size">Selecciona tu talle:</label>
-                    <select id="size" name="size">
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                    </select>
-                    
-                    <button type="submit" class="btn-primary">Añadir al Carrito</button>
-                </form>
-            </div>
-        </div>
+        </section>    
     </main>
-    
+
     <footer class="footer">
         <div class="footer-links">
             <a href="../HTML/nosotros.html">Acerca de nosotros</a>
