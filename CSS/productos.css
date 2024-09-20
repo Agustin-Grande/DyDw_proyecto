@@ -188,9 +188,9 @@ h1, h2, h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    justify-content: center; /* Centrar los productos horizontalmente */
-    max-width: 1200px; /* Ancho máximo para limitar el área de los productos */
-    margin: 0 auto; /* Centrar el contenedor en la página */
+    justify-content: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 
