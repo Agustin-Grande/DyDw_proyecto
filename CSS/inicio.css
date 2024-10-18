@@ -34,6 +34,7 @@ h1, h2, h3 {
     align-items: center;
     border-bottom: solid #F5F5F5;
     position: relative; 
+    gap: 7px;
 }
 
 .header img{
@@ -44,6 +45,7 @@ h1, h2, h3 {
 .header a{
     color:white;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 .header .logo, .header .search-bar, .header .user-options {
@@ -221,4 +223,85 @@ h1, h2, h3 {
 .footer a {
     margin: 0 10px;
     text-decoration: none;
+}
+
+/* Estilos para pantallas pequeñas (celulares) */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header img {
+        margin-left: 0;
+        width: 50px;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .fondo-texto h2 {
+        font-size: 24px;
+    }
+    .fondo-texto p {
+        font-size: 14px;
+    }
+    .product-grid {
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        padding: 5px 12px;
+        gap: 5px;
+    }
+    .header img {
+        width: 60px;
+        margin-left: -10px;
+    }
+    .header .user-options {
+        gap: 4px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+    .fondo-texto h2 {
+        font-size: 28px;
+    }
+    .fondo-texto p {
+        font-size: 16px;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+/* Estilos para pantallas grandes (laptops y desktops) */
+@media (min-width: 769px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header img {
+        width: 70px;
+        margin-left: -10px;
+    }
+    .menu ul {
+        flex-direction: row;
+    }
+    .fondo-texto h2 {
+        font-size: 36px;
+    }
+    .fondo-texto p {
+        font-size: 18px;
+    }
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
