@@ -10,6 +10,13 @@ body {
     color: #333;
 }
 
+
+a {
+    text-decoration: none;
+    color: black;
+    align-content: center;
+}
+
 h1, h2, h3 {
     font-family: 'Nexa', sans-serif;
 }

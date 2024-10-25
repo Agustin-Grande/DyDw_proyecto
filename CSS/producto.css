@@ -7,6 +7,12 @@ body {
     padding-bottom: 50px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    align-content: center;
+}
+
 .header {
     background-color: #A2C7E2;
     color: white;
