@@ -20,7 +20,7 @@ a {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    border-bottom: solid #F5F5F5;
+    border-bottom: solid 1px black;
     position: relative; 
 }
 
@@ -94,6 +94,9 @@ a {
 
 .menu-toggle:checked + .menu-button + .menu {
     display: block;
+    border-bottom: solid 1px black; 
+    transition: all 5.5s ease-in-out;
+    
 }
 
 .menu ul {
@@ -103,6 +106,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.menu-button:hover {
+    background-color: lightblue;
+    transition: background-color 0.5s;
 }
 
 .menu ul li {
@@ -170,6 +178,11 @@ select {
     border: none;
     cursor: pointer;
     margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: lightblue;
+    transition: background-color 0.5s;
 }
 
 footer {
@@ -249,9 +262,6 @@ footer {
     .header img {
         width: 70px;
         margin-left: -10px;
-    }
-    .menu ul {
-        flex-direction: row;
     }
     .fondo-texto h2 {
         font-size: 36px;

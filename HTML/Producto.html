@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../CSS/producto.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Nexa:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -44,7 +45,7 @@
             <div class="product-info">
                 <h2>Adidas Runfalcon 3.0 Negra</h2>
                 <p><strong>Precio:</strong> $100.00</p>
-                <p><strong>Stock disponible:</strong> 15 unidades</p>
+                <p><strong>Stock disponible:</strong> <span id="Stock">1</span> unidades</p>
                 
                 <form>
                     <label for="size">Selecciona tu talle:</label>
@@ -57,8 +58,8 @@
                         <option value="41">41</option>
                         <option value="42">42</option>
                     </select>
-                    
-                    <button type="button" class="btn-primary" id="compra">Comprar</button>
+                    <br>
+                    <button type="button" class="btn-primary">Comprar</button>
                 </form>
             </div>
         </div>
@@ -71,5 +72,6 @@
         </div>
         <p>&copy; 2024 Style Shoes. Todos los derechos reservados.</p>
     </footer>
+    <script src="../JS/producto.js"></script>
 </body>
 </html>
