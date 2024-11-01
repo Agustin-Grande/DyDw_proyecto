@@ -131,9 +131,10 @@ h1, h2, h3 {
 .about-us {
     background-color: #F5F5F5;
     padding: 2rem 0;
+    margin: 20px;
 }
 
-.about-us .container {
+.about-us .container {  
     max-width: 1200px;
     margin: 0 auto;
     text-align: left;
@@ -194,11 +195,17 @@ h1, h2, h3 {
     .menu ul {
         flex-direction: column;
     }
-    .fondo-texto h2 {
-        font-size: 24px;
+    .about-us h2 {
+        font-size: 1.4rem !important;
     }
-    .fondo-texto p {
-        font-size: 14px;
+    .about-us h3 {
+        font-size: 1rem !important;
+    }
+    .about-us p {
+        font-size: 0.777rem !important;
+    }
+    .about-us ul li {
+        font-size: 0.777rem !important;
     }
     .product-grid {
         grid-template-columns: 1fr;
@@ -229,8 +236,17 @@ h1, h2, h3 {
     .fondo-texto h2 {
         font-size: 28px;
     }
-    .fondo-texto p {
-        font-size: 16px;
+    .about-us h2 {
+        font-size: 1.7rem;
+    }
+    .about-us h3 {
+        font-size: 1.2rem;
+    }
+    .about-us p {
+        font-size: 0.9rem;
+    }
+    .about-us ul li {
+        font-size: 0.9rem !important;
     }
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -240,6 +256,7 @@ h1, h2, h3 {
 
 /* Estilos para pantallas grandes (laptops y desktops) */
 @media (min-width: 769px) {
+
     .header {
         flex-direction: row;
         justify-content: space-between;
@@ -247,15 +264,6 @@ h1, h2, h3 {
     .header img {
         width: 70px;
         margin-left: -10px;
-    }
-    .menu ul {
-        flex-direction: row;
-    }
-    .fondo-texto h2 {
-        font-size: 36px;
-    }
-    .fondo-texto p {
-        font-size: 18px;
     }
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
