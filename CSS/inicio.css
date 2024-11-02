@@ -32,9 +32,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    border-bottom: solid #F5F5F5;
     position: relative; 
-    gap: 7px;
 }
 
 .header img{
@@ -45,7 +43,6 @@ h1, h2, h3 {
 .header a{
     color:white;
     text-decoration: none;
-    margin-top: 10px;
 }
 
 .header .logo, .header .search-bar, .header .user-options {
@@ -79,9 +76,40 @@ h1, h2, h3 {
     margin-left: 5px;
 }
 
+/* Propiedades iniciales del menú (cerrado) */
+.menu {
+    display: block; /* Cambiamos a block para manipular altura */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #A2C7E2;
+    z-index: 10; 
+}
 
 .menu-toggle {
     display: none;
+}
+
+/* Cuando el checkbox está marcado, el menú se abre con transición */
+.menu-toggle:checked + .menu-button + .menu {
+    max-height: 200px; /* Ajusta este valor según el tamaño del menú */
+    opacity: 1;
+}
+
+/* Otros estilos para el menú */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu-button {
@@ -93,30 +121,11 @@ h1, h2, h3 {
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    transition: background-color 0.5s;
 }
 
-.menu {
-    display: none;
-    position: absolute; 
-    top: 100%; 
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: #A2C7E2;
-    z-index: 10; 
-}
-
-.menu-toggle:checked + .menu-button + .menu {
-    display: block;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.menu-button:hover {
+    background-color: lightblue;
 }
 
 .menu ul li {
