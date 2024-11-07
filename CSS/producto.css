@@ -7,6 +7,12 @@ body {
     padding-bottom: 50px;
 }
 
+h4 {
+    font-family: 'Nexa', sans-serif;
+    color: #333;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -84,13 +90,12 @@ a {
     display: none;
 }
 
-/* Cuando el checkbox está marcado, el menú se abre con transición */
+
 .menu-toggle:checked + .menu-button + .menu {
-    max-height: 200px; /* Ajusta este valor según el tamaño del menú */
+    max-height: 200px; 
     opacity: 1;
 }
 
-/* Otros estilos para el menú */
 .menu ul {
     list-style: none;
     padding: 0;
@@ -143,7 +148,7 @@ a {
 }
 
 .product-info {
-    max-width: 600px;
+    max-width: 600px;;
 }
 
 .product-info h2 {
@@ -187,6 +192,17 @@ select {
 .btn-primary:hover {
     background-color: lightblue;
     transition: background-color 0.5s;
+}
+
+.product-description {
+    display: flex;
+    margin: 2rem auto;
+    flex-direction: column;
+}
+
+#details{
+    text-decoration: underline double;
+    cursor: pointer;
 }
 
 footer {

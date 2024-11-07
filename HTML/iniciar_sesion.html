@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/registro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,9 +32,11 @@
             </div>
             <br>
             <div class="form-group">
-                <a href="../HTML/inicio.html"><button type="button">Iniciar</button></a>
+                <button type="button" id="loginButton">Iniciar</button>
+                <p id="error-message" style="display: none;"></p>
             </div>
         </form>
     </div>
+    <script src="../JS/login.js"></script>
 </body>
 </html>

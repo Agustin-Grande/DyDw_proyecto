@@ -21,6 +21,22 @@ $(document).ready(function () {
             alert("No hay stock disponible");
         }
     });
+
+    $("#details").click(function () {
+        let visible = $(this).data("visible") || false;
+        $("#description").stop().slideToggle(300);
+        if (visible) {
+            $(this).text("Ver descripción ↓");
+            $("#description").hide();
+            $(this).next().hide();
+        } else {
+            $(this).text("Ocultar detalles ↑");
+            $("#description").show();
+            $(this).next().show();}
+        $(this).data("visible", !visible);
+
+        
+    });
 });
 
 
