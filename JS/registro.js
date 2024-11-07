@@ -5,22 +5,11 @@ $(document).ready(function() {
         var contrasena = $('#password').val();
         var mail = $('#mail').val();
         var contrasenaVerificacion = $('#confirm-password').val();
-
-        if (contrasena !== contrasenaVerificacion) {
-            alert("Las contraseñas no coinciden.");
-            return false;
-        }
-
-        if (!nombre || !nombreUsuario || !contrasena || !mail || !contrasenaVerificacion) {
-            alert("Todos los campos son obligatorios.");
-            return false;
-        }
-
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         var nameRegex = /^[a-zA-Z\s]+$/;
-
-        if (contrasena.length < 8) {
-            alert("La contraseña debe tener al menos 8 caracteres.");
+        
+        if (!nombre || !nombreUsuario || !contrasena || !mail || !contrasenaVerificacion) {
+            alert("Todos los campos son obligatorios.");
             return false;
         }
 
@@ -31,6 +20,16 @@ $(document).ready(function() {
 
         if (!emailRegex.test(mail)) {
             alert("El formato del correo electrónico no es válido.");
+            return false;
+        }
+
+        if (contrasena.length < 8) {
+            alert("La contraseña debe tener al menos 8 caracteres.");
+            return false;
+        }
+        
+        if (contrasena !== contrasenaVerificacion) {
+            alert("Las contraseñas no coinciden.");
             return false;
         }
 
