@@ -189,7 +189,7 @@ aside select{
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 200px);
     gap: 20px;
     justify-content: center;
     max-width: 1200px; 
@@ -251,72 +251,19 @@ aside select{
 }
 
 /* Responsive Design */
-
-/* Celulares */
+/* Media query para pantallas pequeñas (celulares) */
 @media (max-width: 480px) {
     .header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header img {
-        margin-left: 0;
-    }
-
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .filters {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .menu ul {
-        flex-direction: column;
-    }
-}
-
-/* Tabletas */
-@media (min-width: 481px) and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header img {
-        margin-left: 0;
-    }
-
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .filters {
-        width: 50%;
-    }
-}
-
-/* Laptops y pantallas más grandes */
-@media (max-width: 1024px) {
-    .product-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .filters {
-        width: 20%;
-    }
-}
-
-/* Estilos para pantallas pequeñas (celulares) */
-@media (max-width: 480px) {
-    .header {
-        flex-direction: column;
+        flex-direction: column !important;
         text-align: center;
     }
     .header img {
         margin-left: 0;
         width: 50px;
+        scale: 0.85;
+    }
+    .header .search-bar{
+        scale: 0.85;
     }
     .menu ul {
         flex-direction: column;
@@ -327,13 +274,15 @@ aside select{
     .fondo-texto p {
         font-size: 14px;
     }
+    .filters{
+        width: 90%;
+    }
     .product-grid {
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: repeat(1, 200px) !important;
     }
 }
 
-/* Estilos para pantallas medianas (tablets) */
+/* Media query para pantallas medianas (tablets) */
 @media (min-width: 481px) and (max-width: 768px) {
     .header {
         flex-direction: row;
@@ -349,7 +298,6 @@ aside select{
     .header .user-options {
         gap: 4px;
     }
-
     .menu ul {
         flex-direction: column;
     }
@@ -360,13 +308,11 @@ aside select{
         font-size: 16px;
     }
     .product-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 200px) !important;
     }
-    
 }
-
 /* Estilos para pantallas grandes (laptops y desktops) */
-@media (min-width: 769px) {
+@media (max-width: 1024px) {
     .header {
         flex-direction: row;
         justify-content: space-between;
@@ -382,6 +328,6 @@ aside select{
         font-size: 18px;
     }
     .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 200px);
     }
 }
