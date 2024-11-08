@@ -251,12 +251,13 @@ h1, h2, h3 {
         margin-left: 0;
         width: 50px;
     }
-    .search-bar {
+    .header a {
         scale: 0.8;
     }
-    .header .user-options{
+    .menu-button {
         scale: 0.8;
     }
+    
     .menu ul {
         flex-direction: column;
     }
@@ -267,7 +268,7 @@ h1, h2, h3 {
         font-size: 14px;
     }
     .product-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 0fr;
         
     }
 }
@@ -291,7 +292,10 @@ h1, h2, h3 {
     .search-bar {
         scale: 0.9;
     }
-    .header .user-options{
+    .header a {
+        scale: 0.9;
+    }
+    .menu-button {
         scale: 0.9;
     }
     .menu ul {

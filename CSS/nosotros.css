@@ -206,7 +206,10 @@ h1, h2, h3 {
     .search-bar {
         scale: 0.8;
     }
-    .header .user-options{
+    .header a {
+        scale: 0.8;
+    }
+    .menu-button {
         scale: 0.8;
     }
     .menu ul {
@@ -249,7 +252,10 @@ h1, h2, h3 {
     .search-bar {
         scale: 0.9;
     }
-    .header .user-options{
+    .header a {
+        scale: 0.9;
+    }
+    .menu-button {
         scale: 0.9;
     }
     .menu ul {
