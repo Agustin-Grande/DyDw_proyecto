@@ -223,10 +223,17 @@ html, body {
     .header {
         flex-direction: column;
         text-align: center;
+        
     }
     .header img {
         margin-left: 0;
         width: 50px;
+    }
+    .header a {
+        scale: 0.8;
+    }
+    .menu-button {
+        scale: 0.8;
     }
     .menu ul {
         flex-direction: column;
@@ -259,6 +266,12 @@ html, body {
     .header .user-options {
         gap: 4px;
     }
+    .header a {
+        scale: 0.8;
+    }
+    .menu-button {
+        scale: 0.8;
+    }
 
     .menu ul {
         flex-direction: column;
@@ -286,7 +299,7 @@ html, body {
         margin-left: -10px;
     }
     .menu ul {
-        flex-direction: row;
+        flex-direction: column;
     }
     .fondo-texto h2 {
         font-size: 36px;
