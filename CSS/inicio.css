@@ -37,7 +37,7 @@ h1, h2, h3 {
 
 .header img{
     width: 70px;
-    margin-left: -200px;    
+    margin-left: -10px;    
 }
 
 .header a {
@@ -45,6 +45,7 @@ h1, h2, h3 {
     align-items: center;
     color: white;
     text-decoration: none;
+    justify-content: center;
 }
 
 .header .logo, .header .search-bar, .header .user-options {
