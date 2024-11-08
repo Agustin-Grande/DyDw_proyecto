@@ -1,0 +1,9 @@
+Usuarios validos;
+-juan
+-Agustin
+-uade
+
+contrasenas;
+-12345678
+-desarrolloweb
+-cuatrimestre

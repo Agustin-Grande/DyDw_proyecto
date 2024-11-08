@@ -1,8 +1,8 @@
 $(document).ready(function() {
     const users = [
-        { username: 'juan', password: '123' },
-        { username: 'user2', password: 'password2' },
-        { username: 'user3', password: 'password3' }
+        { username: 'juan', password: '12345678' },
+        { username: 'agus', password: 'desarrolloweb' },
+        { username: 'uade', password: 'cuatrimestre' }
     ];
 
     $('#loginButton').click(function() {
@@ -27,8 +27,6 @@ $(document).ready(function() {
             {window.location.href = "inicio.html";}
         } else if (password.length === 0 || username.length === 0){
             $('#error-message').text('Usuario y contraseña son requeridos').show();
-        } else if (password.length <= 8) {
-            $('#error-message').text('La contraseña debe tener al menos 8 caracteres').show();
         } else {
             $('#error-message').text('Usuario o contraseña incorrectos').show();
         }
