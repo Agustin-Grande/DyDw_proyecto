@@ -5,7 +5,6 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    padding-bottom: 50px;
 }
 html{
     height: 100%;
@@ -152,7 +151,7 @@ a {
 }
 
 .product-info {
-    max-width: 600px;;
+    width: 70%;
 }
 
 .product-info h2 {
@@ -224,6 +223,11 @@ footer {
     padding: 1rem 0;
     text-align: center;
 }
+#description{
+    display: none;
+    margin-top: -10px;
+    font-size: 1rem;
+}
 
 /* Estilos para pantallas pequeñas (celulares) */
 @media (max-width: 480px) {
@@ -238,15 +242,13 @@ footer {
     .header .search-bar {
         scale: 0.8;
     }
+    .header .user-options{
+        scale: 0.8;
+    }
     .menu ul {
         flex-direction: column;
     }
-    .fondo-texto h2 {
-        font-size: 24px;
-    }
-    .fondo-texto p {
-        font-size: 14px;
-    }.container-product-detail {
+    .container-product-detail {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -291,6 +293,9 @@ footer {
         gap: 4px;
     }
     .search-bar {
+        scale: 0.9;
+    }
+    .header .user-options{
         scale: 0.9;
     }
     .menu ul {
@@ -340,16 +345,17 @@ footer {
         width: 70px;
         margin-left: -10px;
     }
-    .fondo-texto h2 {
-        font-size: 36px;
-    }
-    .fondo-texto p {
-        font-size: 18px;
+    .product-image img {
+        margin-top: 23px;
     }
     .container-product-detail{
         display: flex;
+        justify-content: center;
         gap: 2rem;
         flex: 1;    
+    }
+    .product-info{
+        width: 30%;
     }
     footer {
         position: absolute;

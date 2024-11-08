@@ -251,6 +251,12 @@ h1, h2, h3 {
         margin-left: 0;
         width: 50px;
     }
+    .search-bar {
+        scale: 0.8;
+    }
+    .header .user-options{
+        scale: 0.8;
+    }
     .menu ul {
         flex-direction: column;
     }
@@ -282,7 +288,10 @@ h1, h2, h3 {
     .header .user-options {
         gap: 4px;
     }
-    .header .search-bar {
+    .search-bar {
+        scale: 0.9;
+    }
+    .header .user-options{
         scale: 0.9;
     }
     .menu ul {
